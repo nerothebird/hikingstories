@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Reenie Beanie';
+    src: url(./Reenie_Beanie/ReenieBeanie-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    background-color:darkolivegreen;
+    cursor: none;
+}
+
+button {
+    width: 70vw;
+    height: 30vh;
+    margin-left: 15%;
+    cursor: url('./cursor/cursor.png'), auto;
+    position: absolute;
+    top: 50vh;
+    opacity: 0;
+}
+
+audio {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+}
+
+/* video */
+.video-container {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     overflow: hidden;
+}
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* name */
+.glitch {
+    width:max-content;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 300px;
+    font-family: 'Reenie Beanie';
+    color: aliceblue;
+}
+.glitch::before, .glitch::after {
+    content: 'Hiking Stories';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: max-content;
+}
+.glitch:before {
+    animation: glitch 0.5s linear infinite;
+    color: darkslategrey;
+    z-index: -2;
+}
+.glitch::after {
+    animation: glitch 0.5s linear reverse infinite;
+    color:lightblue;
+    z-index: -1;
+}
+@keyframes glitch {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    20%{
+        top: -5px;
+        left: -5px;
+    }
+    40% {
+        top: 5px;
+        left: 5px;
+    }
+    60%{
+        top: -5px;
+        left: 5px;
+    }
+    80%{
+        top: 5px;
+        left: -5px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
+/* animation source: https: //www.youtube.com/watch?v=9CCkp_El1So */

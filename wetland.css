@@ -1,0 +1,36 @@
+html {
+    cursor: none;
+    background-image: url("./photos/wetlandbackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.story {
+    width: 70vw;
+    height: 50vh;
+    margin-left: 15%;
+    margin-top: 20vh;
+    cursor: url('./cursor/cursor.png'), auto;
+}
+
+button {
+    width: 90px;
+    height: 200px;
+    margin-top: 10vh;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.forth {
+    margin-left: 88vw;
+    cursor: url('./cursor/cursorright.png'), auto;
+}
+
+.back {
+    cursor: url('./cursor/cursorleft.png'), auto;
+}

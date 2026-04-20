@@ -1,0 +1,35 @@
+html {
+    cursor: none;
+    background-image: url("./photos/forestbackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.story {
+    width: 60vw;
+    height: 40vh;
+    margin-left: 20%;
+    margin-top: 40vh;
+    cursor: url('./cursor/cursor.png'), auto;
+}
+
+
+button {
+    width: 200px;
+    height: 200px;
+    margin-top: 0vh;
+    border-radius: 20px;
+    border: none;
+    opacity: 0;
+} 
+.forth {
+    margin-left: 72vw;
+    cursor: url('./cursor/cursorright.png'), auto;
+}
+.back {
+    margin-left: 2vw;
+    cursor: url('./cursor/cursorleft.png'), auto;
+}

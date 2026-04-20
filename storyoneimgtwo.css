@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Reenie Beanie';
+    src: url(./Reenie_Beanie/ReenieBeanie-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    background-image: url("./photos/paper.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img {
+    width: 70vw;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+
+.goback {
+    height: 40px;
+    width: 90px;
+    top: 3%;
+    left: 1%;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    font-family: 'Reenie Beanie';
+    font-size: 25px;
+}
+.goback:hover {
+    animation: up-down 2s infinite alternate;
+    background-color: darkred;
+    color: cornsilk;
+}
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+/* animation source: https: //antikrist.lol/ */

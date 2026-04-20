@@ -1,0 +1,126 @@
+/* fonts */
+@font-face {
+    font-family: 'Coming Soon';
+    src: url(./Coming_Soon/ComingSoon-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Reenie Beanie';
+    src: url(./Reenie_Beanie/ReenieBeanie-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    background-image: url("./photos/paper.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+audio {
+    position: fixed;
+    top: 20%;
+    left: 96%;
+    width: 20px;
+}
+
+/* text */
+.container {
+    padding-top: 20vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 20vh;
+}
+p {
+    font-size: 30px;
+    font-family: 'Coming Soon';
+}
+
+/* close button */
+.close {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-left: 95vw;
+    margin-top: 3vh;
+    font-weight: 700;
+    color: #3a2b19;
+    position: fixed;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.close:hover {
+    background-color: #3a2b19;
+    color: #fef1bb;
+    transition: background-color 1s;
+}
+
+/* hyperlink */
+a {
+    color: darkred;
+    text-decoration: none;
+}
+a:hover {
+    color: olive;
+    text-decoration: none;
+}
+
+/* go back button */
+.goback {
+    position:absolute;
+    top: 90vh;
+    left: 93vw;
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    font-family: 'Reenie Beanie';
+    font-size: 25px;
+}
+.goback:hover {
+    animation: right-left 0.5s;
+    background-color: darkred;
+    color: cornsilk;
+}
+@keyframes right-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
